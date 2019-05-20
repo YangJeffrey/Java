@@ -3,3 +3,4 @@
 # adds all numbers from 1 to number
 # temperature converter between fahrenheit and celsius
 # dice roll between 1 and max
+# static timer 10 seconds
