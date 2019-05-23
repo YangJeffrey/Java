@@ -1,0 +1,32 @@
+package project;
+import java.util.Scanner;
+
+	public class quadsolver {
+		public static void main(String args[]) {
+			System.out.println("quadratic equation (ax^2+bx+c):");
+			Scanner input = new Scanner(System.in);
+			String quadratic = input.next();
+			String s = quadratic;
+
+			int i=s.indexOf("x^2");
+			int j=s.indexOf("x", i + 1);
+			int k= j + 1;
+			
+			int length = quadratic.length();
+			
+			String astring = quadratic.substring(0, i);
+			String bstring = quadratic.substring(i+3, j);
+			String cstring = quadratic.substring(j+1, length);
+			
+			int a=Integer.parseInt(astring);
+			int b=Integer.parseInt(bstring);
+			int c=Integer.parseInt(cstring);
+			
+			double root1 = ((-1 *b)+(Math.sqrt(Math.pow(b,2) - 4*a*c)))/(2*a);
+			double root2 = ((-1 *b)-(Math.sqrt(Math.pow(b,2) - 4*a*c)))/(2*a);
+			
+			System.out.println("Roots:");
+			System.out.println(root1);
+			System.out.println(root2); 
+	}
+}
