@@ -1,8 +1,9 @@
 # java projects by Jeffrey Yang
-# Calculator
-# Summation
+# calculator
+# summation
 # F to C converter
 # dice roll
-# timer
+# static timer
 # fibonacci sequence
-# volume
+# volume finder
+# quadratic equation solver
