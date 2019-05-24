@@ -8,15 +8,15 @@ import java.util.Scanner;
 			String quadratic = input.next();
 			String s = quadratic;
 
-			int i=s.indexOf("x^2");
-			int j=s.indexOf("x", i + 1);
-			int k= j + 1;
+			int landmark1=s.indexOf("x^2");
+			int landmark2=s.indexOf("x", landmark1 + 1);
+			int k= landmark2 + 1;
 			
 			int length = quadratic.length();
 			
-			String astring = quadratic.substring(0, i);
-			String bstring = quadratic.substring(i+3, j);
-			String cstring = quadratic.substring(j+1, length);
+			String astring = quadratic.substring(0, landmark1);
+			String bstring = quadratic.substring(landmark1+3, landmark2);
+			String cstring = quadratic.substring(landmark2+1, length);
 			
 			int a=Integer.parseInt(astring);
 			int b=Integer.parseInt(bstring);
