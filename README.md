@@ -1,10 +1,10 @@
 # java projects by Jeffrey Yang
-# calculator
-# summation
+# 5 function calculator
+# summation calculator
 # F to C converter
-# dice roll
-# static timer
-# fibonacci sequence
-# volume finder
+# random dice roll
+# static variable timer
+# fibonacci sequence generator
+# cuboid/cube/sphere volume finder
 # quadratic equation solver
 # tictactoe game
