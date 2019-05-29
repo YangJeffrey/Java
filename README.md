@@ -1,4 +1,5 @@
-# java projects by Jeffrey Yang
+# Java Projects by Jeffrey Yang
+# _____________________________
 # 5 function calculator
 # summation calculator
 # F to C converter
