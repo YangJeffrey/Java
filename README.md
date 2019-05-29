@@ -7,4 +7,4 @@
 # fibonacci sequence generator
 # cuboid/cube/sphere volume finder
 # quadratic equation solver
-# tictactoe game
+# tic-tac-toe game
