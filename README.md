@@ -7,4 +7,4 @@
 # fibonacci sequence
 # volume finder
 # quadratic equation solver
-# tictactoe (unfinished)
+# tictactoe game
