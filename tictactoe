@@ -17,9 +17,9 @@ public class tictactoe {
 
 		System.out.print("[" + ttt[6] + "]");
 		System.out.print("[" + ttt[7] + "]");
-		System.out.print("[" + ttt[8] + "]");
+		System.out.println("[" + ttt[8] + "]");
 		
-		System.out.println("");
+		System.out.println(turn + " move");
 		
 		Scanner input = new Scanner(System.in);
 		int move = input.nextInt();
@@ -37,22 +37,19 @@ public class tictactoe {
 		}
 		
 		if (turn.equals("x")) {
-			turn = "y";
+			turn = "o";
 		} else {
 			turn = "x";
 		}
 		}
 	
 public static void main(String args[]) {
+	
 	String turn = "x";
-	method();
-	method();
-	method();
-	method();
-	method();
-	method();
-	method();
-	method();
-	method();
+	for (int i = 0; i < 9; i++) {
+		method();
+	}
+System.out.println("tie!");
 		}
-}
+	
+	}
