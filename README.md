@@ -2,7 +2,7 @@
 # 
 # 5 function calculator
 # summation calculator
-# F to C converter
+# Fahrenheit to Celsius converter
 # random dice roll
 # static variable timer
 # fibonacci sequence generator
