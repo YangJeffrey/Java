@@ -10,4 +10,5 @@
 # quadratic equation solver
 # tic-tac-toe game
 # loops extravaganza
-# caesar cipher (in progress)
+# caesar cipher encryption
+# caesar cipher decryption (incomplete)
