@@ -1,21 +1,22 @@
-package project;
 import java.util.Scanner;
 
-public class caesar {
+public class Main{
 public static void main(String args[]) {
 	
 	
 	Scanner input = new Scanner(System.in);
-	String original = "meet by the river at dawn";
+	String original = "hello world";
 	char[] charlist = original.toCharArray();
 	int shift = 5;
 	
 	 for (int i = 0; (i < charlist.length); i++) {
-	      char letter = charlist[i];
+        char letter = charlist[i];
 	      int ascii = letter;
 	      int crypt = ascii + shift;
-	      System.out.print((char)crypt);
+        int shiftedcrypt = crypt - 97;
+        int shiftedcryptmod = shiftedcrypt % 26;
+        int finalcrypt = shiftedcryptmod + 97;
+        System.out.print((char)finalcrypt);
 	 }
-	 }
-	
+	}
 }
