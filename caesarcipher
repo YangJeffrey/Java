@@ -14,7 +14,7 @@ public static void main(String args[]) {
 	      char letter = charlist[i];
 	      int ascii = letter;
 	      int crypt = ascii + shift;
-	      System.out.println(ascii);
+	      System.out.print((char)crypt);
 	 }
 	 }
 	
