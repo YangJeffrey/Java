@@ -30,3 +30,5 @@ import java.util.Scanner;
 			System.out.println(root2); 
 	}
 }
+
+//credit to @MaximilianHollis for the help
