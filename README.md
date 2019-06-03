@@ -12,4 +12,4 @@
 # loops extravaganza
 # caesar cipher encryption
 # caesar cipher decryption (incomplete)
-# advanced multivariate calculator
+# advanced multivariate calculator (incomplete)
