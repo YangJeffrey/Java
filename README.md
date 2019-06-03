@@ -1,6 +1,6 @@
 # Java Projects by Jeffrey Yang
 # 
-# 5 function calculator
+# 5 function 2 number calculator
 # summation calculator
 # Fahrenheit to Celsius converter
 # random dice roll
