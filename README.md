@@ -8,6 +8,7 @@
 # fibonacci sequence generator
 # cuboid/cube/sphere volume finder
 # quadratic equation solver
-# tic-tac-toe game
+# tic-tac-toe game (terminal)
 # loops extravaganza
 # caesar cipher encryption
+# tic-tac-toe game with GUI (in progress)
