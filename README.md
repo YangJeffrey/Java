@@ -8,9 +8,9 @@
 # fibonacci sequence generator
 # cuboid/cube/sphere volume finder
 # quadratic equation solver
-# tic-tac-toe game (terminal)
+# tic-tac-toe game
 # loops extravaganza
 # caesar cipher encryption
-# tic-tac-toe game with GUI (in progress)
+# conway's game of life 
 
 <img height = "10%" width = "10%" src= "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"> 
