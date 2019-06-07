@@ -1,0 +1,22 @@
+package project;
+
+public class conwaygol {
+public static void main(String[] args) {
+	printboard();
+}
+static void printboard() {
+	
+	String[][] board = {{"0","0","0","0","0"},
+			 {"0","0","0","0","0"},
+			 {"0","x","x","x","0"},
+			 {"0","0","0","0","0"},
+			 {"0","0","0","0","0"}};
+
+for (int i = 0; i < 5; i++) {
+	for (int j = 0; j < 5; j++) {
+      System.out.print("[" + board[i][j] + "]"); 
+	}
+	System.out.println();
+}
+}
+}
