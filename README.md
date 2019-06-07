@@ -1,4 +1,4 @@
-# Java Projects by Jeffrey Yang
+<h1> Java Projects by Jeffrey Yang </h1>
 <hr>
 <div> 5 function 2 number calculator </div>
 <div> summation calculator </div>
