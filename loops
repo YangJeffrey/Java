@@ -1,7 +1,6 @@
-package project;
 import java.util.Scanner;
 
-public class test{ 
+public class loops { 
 	
 	static void dowhileloop() {
 		int count = 1;
