@@ -1,5 +1,5 @@
 # Java Projects by Jeffrey Yang
-#
+<hr>
 <div> 5 function 2 number calculator </div>
 <div> summation calculator </div>
 <div> Fahrenheit to Celsius converter </div>
