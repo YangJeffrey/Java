@@ -1,11 +1,11 @@
 # Java Projects by Jeffrey Yang
 #
 <div> 5 function 2 number calculator </div>
-# summation calculator
-# Fahrenheit to Celsius converter
-# random dice roll
-# static variable timer
-# fibonacci sequence generator
+<div> summation calculator </div>
+<div> Fahrenheit to Celsius converter </div>
+<div> random dice roll </div>
+<div> static variable timer </div>
+<div> fibonacci sequence generator </div>
 # cuboid/cube/sphere volume finder
 # quadratic equation solver
 # tic-tac-toe game
