@@ -1,4 +1,6 @@
+package com.company;
 import java.util.Random;
+import java.util.Scanner;
 
 public class pennypitch {
     public static void main(String args[]) {
@@ -8,14 +10,18 @@ public class pennypitch {
                 {0,0,0,0,0},
                 {0,0,0,0,0},
                 {0,0,0,0,0}};
-System.out.println("BOARD");
+        System.out.println("BOARD:");
 printnewboard(board);
-System.out.println();
-pitchpennies(board);
-        System.out.println("PITCHES");
+        System.out.println();
+        Scanner numpitches = new Scanner(System.in);
+        System.out.println("Number of pitches:");
+        int p = numpitches.nextInt();
+        System.out.println();
+pitchpennies(board,p);
+        System.out.println("PITCHES:");
 printboard(board);
 System.out.println();
-        System.out.println("PRIZES");
+        System.out.println("PRIZES:");
 checkwin(board);
     }
     static void printnewboard(int board[][]) {
@@ -65,8 +71,8 @@ checkwin(board);
         }
     }
 
-    static void pitchpennies(int board[][]) {
-for (int i = 0; i < 10; i++) {
+    static void pitchpennies(int board[][], int p) {
+for (int i = 0; i < p; i++) {
     Random rand1 = new Random();
     int j = rand1.nextInt(5);
     Random rand2 = new Random();
@@ -88,10 +94,7 @@ board[j][k] = 6;
         }
         for (int l =0; l < prizes.length; l++) {
             if (prizes[l] != "") {
-                System.out.print("+");
                 System.out.println(prizes[l]);
-            } else {
-                System.out.println("+Nothing");
             }
             }
         }
