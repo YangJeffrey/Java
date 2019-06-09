@@ -1,0 +1,90 @@
+import java.util.Random;
+
+public class pennypitch {
+    public static void main(String args[]) {
+        int[][] board = {
+                {1,5,4,5,0},
+                {5,4,5,0,3},
+                {5,1,2,5,5},
+                {1,3,5,4,2},
+                {0,2,5,5,3}};
+        printnewboard(board);
+        System.out.println();
+        pitchpennies(board);
+        printboard(board);
+        System.out.println();
+        System.out.println("PRIZES:");
+        checkwin(board);
+    }
+    static void printnewboard(int board[][]) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (board[i][j] == 0) {
+                    System.out.print("[ Doll ]");
+                } else if (board[i][j] == 1) {
+                    System.out.print("[Puzzle]");
+                } else if (board[i][j] == 2) {
+                    System.out.print("[ Game ]");
+                } else if (board[i][j] == 3) {
+                    System.out.print("[ Ball ]");
+                } else if (board[i][j] == 4) {
+                    System.out.print("[Poster]");
+                }else if (board[i][j] == 5) {
+                    System.out.print("[      ]");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void printboard(int board[][]) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (board[i][j] == 0) {
+                    System.out.print("[ Doll ]");
+                } else if (board[i][j] == 1) {
+                    System.out.print("[Puzzle]");
+                } else if (board[i][j] == 2) {
+                    System.out.print("[ Game ]");
+                } else if (board[i][j] == 3) {
+                    System.out.print("[ Ball ]");
+                } else if (board[i][j] == 4) {
+                    System.out.print("[Poster]");
+                } else if (board[i][j] == 5) {
+                    System.out.print("[      ]");
+                } else {
+                    System.out.print("[LANDED]");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void pitchpennies(int board[][]) {
+        for (int i = 0; i < 10; i++) {
+            Random rand1 = new Random();
+            int j = rand1.nextInt(5);
+            Random rand2 = new Random();
+            int k = rand2.nextInt(5);
+            board[j][k] = 6;
+        }
+    }
+
+    static void checkwin(int board[][]) {
+        String[] prizes = {"Doll", "Puzzle", "Game", "Ball", "Poster"};
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                for (int k =0; k < prizes.length; k++) {
+                    if (board[i][j] == k) {
+                        prizes[k] = "";
+                    }
+                }
+            }
+        }
+        for (int l =0; l < prizes.length; l++) {
+            if (prizes[l] != "") {
+                System.out.println(prizes[l]);
+            }
+        }
+    }
+}
