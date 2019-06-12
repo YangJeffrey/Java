@@ -1,38 +1,81 @@
-public class gameoflife{
+public class gameoflife
+{ 
+ public static void main(String[] args) 
+ { 
+     int length = 5, width = 5; 
 
-public static void main(String[] args) {
-  int[][] board = {{0,0,0,0,0},
-			 {0,0,0,0,0},
-			 {0,1,1,1,0},
-			 {0,0,0,0,0},
-			 {0,0,0,0,0}};
-  for (int t = 0; t < 6; t++) {
-System.out.println("Generation" + t);
-printboard(board);
-nextgen(board, 5, 5);
-System.out.println();
-}
-}
-static void printboard(int board[][]) {
+     int[][] matrix = {
+         {0, 1, 0, 0, 0}, 
+         {0, 0, 1, 0, 0}, 
+         {1, 1, 1, 0, 0}, 
+         {0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0} 
+     }; 
 
-for (int i = 0; i < 5; i++) {
-	for (int j = 0; j < 5; j++) {
-      System.out.print("[" + board[i][j] + "]"); 
-	}
-	System.out.println();
-}
-}
-static void nextgen(int board[][], int i, int j) {
+     System.out.println("Genesis"); 
+     for (int x = 0; x < 3; x++) {
+    System.out.println("Generation" + 2*x);
+     printcurrentboard(matrix,length,width);
+     System.out.println();
+     }
+ }
+ 
+ static void printcurrentboard(int matrix[][], int length, int width) {
+     for (int i = 0; i < length; i++) 
+     { 
+         for (int j = 0; j < width; j++) 
+         { 
+             if (matrix[i][j] == 0) 
+                 System.out.print("["+0+"]"); 
+             else
+                 System.out.print("["+1+"]"); 
+         } 
+         System.out.println(); 
+     }
+     System.out.println(); 
+    nextGeneration(matrix, length, width); 
 
-  for (int k = 0; k < i-1; k++) {
-    for (int m = 0; m < j-1; m++) {
-      if (board[k][m] == 0) {
-        System.out.println("dead");
-      } else {
-        System.out.println("alive");
-      }
-    }
-  }
-}
+ }
 
-}
+ static void nextGeneration(int matrix[][], int length, int width) 
+ { 
+     int[][] future = new int[length][width]; 
+
+     for (int l = 1; l < length - 1; l++) 
+     { 
+         for (int m = 1; m < width - 1; m++) 
+         { 
+             int aliveNeighbors = 0; 
+             for (int i = -1; i <= 1; i++) 
+                 for (int j = -1; j <= 1; j++) 
+                     aliveNeighbors += matrix[l + i][m + j]; 
+
+             aliveNeighbors -= matrix[l][m]; 
+
+             if ((matrix[l][m] == 1) && (aliveNeighbors < 2)) 
+                 future[l][m] = 0; 
+
+             else if ((matrix[l][m] == 1) && (aliveNeighbors > 3)) 
+                 future[l][m] = 0; 
+
+             else if ((matrix[l][m] == 0) && (aliveNeighbors == 3)) 
+                 future[l][m] = 1; 
+
+             else
+                 future[l][m] = matrix[l][m]; 
+         } 
+     } 
+
+     for (int i = 0; i < length; i++) 
+     { 
+         for (int j = 0; j < width; j++) 
+         { 
+             if (future[i][j] == 0) 
+                 System.out.print("["+0+"]"); 
+             else
+                 System.out.print("["+1+"]"); 
+         } 
+         System.out.println(); 
+     } 
+ } 
+} 
