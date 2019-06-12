@@ -10,7 +10,8 @@
 <div> tic-tac-toe game </div>
 <div> loops extravaganza </div>
 <div> caesar cipher encryption </div>
-<div> penny pitching game </div>
+<div> penny pitching game (for tanishq) </div>
+<div> prime number checker (for jai) <div>
 <div> conway's game of life (unfinished) </div>
 
 <img height = "10%" width = "10%" src= "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"> 
