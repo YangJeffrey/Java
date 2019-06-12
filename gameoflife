@@ -1,26 +1,35 @@
-public class gameoflife
+import java.util.Scanner;
+
+public class conwaygol
 { 
  public static void main(String[] args) 
  { 
      int length = 5, width = 5; 
 
      int[][] matrix = {
-         {0, 1, 0, 0, 0}, 
-         {0, 0, 1, 0, 0}, 
-         {1, 1, 1, 0, 0}, 
+         {0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0}, 
+         {0, 1, 1, 1, 0}, 
          {0, 0, 0, 0, 0}, 
          {0, 0, 0, 0, 0} 
      }; 
 
      System.out.println("Genesis"); 
-     for (int x = 0; x < 3; x++) {
-    System.out.println("Generation" + 2*x);
-     printcurrentboard(matrix,length,width);
-     System.out.println();
-     }
+     genesis(matrix, length, width);
+     
+     Scanner input = new Scanner(System.in);
+ 	System.out.println("How many Generations? Input integer");
+ 	int numgen = input.nextInt();
+     
+ 	matrix = nextgen(matrix, length, width);
+for (int x = 1; x <= numgen; x++) {
+	System.out.println();
+	System.out.println("Generation" + x);
+	nextgen(matrix, length, width);
+}
  }
- 
- static void printcurrentboard(int matrix[][], int length, int width) {
+ /** Display the original generation */
+ static void genesis(int matrix[][], int length, int width) {
      for (int i = 0; i < length; i++) 
      { 
          for (int j = 0; j < width; j++) 
@@ -32,14 +41,12 @@ public class gameoflife
          } 
          System.out.println(); 
      }
-     System.out.println(); 
-    nextGeneration(matrix, length, width); 
-
  }
 
- static void nextGeneration(int matrix[][], int length, int width) 
+ /** Display the next generation */
+ static int[][] nextgen(int matrix[][], int length, int width) 
  { 
-     int[][] future = new int[length][width]; 
+     int[][] nextmatrix = new int[length][width]; 
 
      for (int l = 1; l < length - 1; l++) 
      { 
@@ -53,16 +60,16 @@ public class gameoflife
              aliveNeighbors -= matrix[l][m]; 
 
              if ((matrix[l][m] == 1) && (aliveNeighbors < 2)) 
-                 future[l][m] = 0; 
+            	 nextmatrix[l][m] = 0; 
 
              else if ((matrix[l][m] == 1) && (aliveNeighbors > 3)) 
-                 future[l][m] = 0; 
+            	 nextmatrix[l][m] = 0; 
 
              else if ((matrix[l][m] == 0) && (aliveNeighbors == 3)) 
-                 future[l][m] = 1; 
+            	 nextmatrix[l][m] = 1; 
 
              else
-                 future[l][m] = matrix[l][m]; 
+            	 nextmatrix[l][m] = matrix[l][m]; 
          } 
      } 
 
@@ -70,12 +77,13 @@ public class gameoflife
      { 
          for (int j = 0; j < width; j++) 
          { 
-             if (future[i][j] == 0) 
+             if (nextmatrix[i][j] == 0) 
                  System.out.print("["+0+"]"); 
              else
                  System.out.print("["+1+"]"); 
          } 
          System.out.println(); 
      } 
+     return matrix;
  } 
 } 
