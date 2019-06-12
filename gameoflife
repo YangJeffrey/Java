@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class conwaygol
+public class gameoflife
 { 
  public static void main(String[] args) 
  { 
