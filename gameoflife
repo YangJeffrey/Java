@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class gameoflife
+public class gol
 { 
  public static void main(String[] args) 
  { 
@@ -8,9 +8,9 @@ public class gameoflife
 
      int[][] matrix = {
          {0, 0, 0, 0, 0}, 
-         {0, 0, 0, 0, 0}, 
+         {0, 0, 1, 0, 0}, 
          {0, 1, 1, 1, 0}, 
-         {0, 0, 0, 0, 0}, 
+         {0, 0, 1, 0, 0}, 
          {0, 0, 0, 0, 0} 
      }; 
 
@@ -21,7 +21,6 @@ public class gameoflife
  	System.out.println("How many Generations? Input integer");
  	int numgen = input.nextInt();
      
- 	matrix = nextgen(matrix, length, width);
 for (int x = 1; x <= numgen; x++) {
 	System.out.println();
 	System.out.println("Generation" + x);
@@ -44,7 +43,7 @@ for (int x = 1; x <= numgen; x++) {
  }
 
  /** Display the next generation */
- static int[][] nextgen(int matrix[][], int length, int width) 
+ static void nextgen(int matrix[][], int length, int width) 
  { 
      int[][] nextmatrix = new int[length][width]; 
 
@@ -59,17 +58,18 @@ for (int x = 1; x <= numgen; x++) {
 
              aliveNeighbors -= matrix[l][m]; 
 
-             if ((matrix[l][m] == 1) && (aliveNeighbors < 2)) 
-            	 nextmatrix[l][m] = 0; 
+             if ((matrix[l][m] == 1) && (aliveNeighbors < 2)) {
+            	 nextmatrix[l][m] = 0;}
 
-             else if ((matrix[l][m] == 1) && (aliveNeighbors > 3)) 
-            	 nextmatrix[l][m] = 0; 
+             else if ((matrix[l][m] == 1) && (aliveNeighbors > 3)) {
+            	 nextmatrix[l][m] = 0;}
 
-             else if ((matrix[l][m] == 0) && (aliveNeighbors == 3)) 
-            	 nextmatrix[l][m] = 1; 
+             else if ((matrix[l][m] == 0) && (aliveNeighbors == 3)) {
+            	 nextmatrix[l][m] = 1; }
 
-             else
+             else {
             	 nextmatrix[l][m] = matrix[l][m]; 
+             }
          } 
      } 
 
@@ -77,13 +77,14 @@ for (int x = 1; x <= numgen; x++) {
      { 
          for (int j = 0; j < width; j++) 
          { 
-             if (nextmatrix[i][j] == 0) 
+             if (nextmatrix[i][j] == 0) {
                  System.out.print("["+0+"]"); 
-             else
-                 System.out.print("["+1+"]"); 
+             matrix[i][j] = 0;}
+             else {
+                 System.out.print("["+1+"]");
+                 matrix[i][j] = 1;}
+             }
+         System.out.println();
+         }
          } 
-         System.out.println(); 
-     } 
-     return matrix;
- } 
-} 
+     }
