@@ -13,6 +13,8 @@
 <div> penny pitching game (for tanishq) </div>
 <div> prime number checker (for jai) </div>
 <div> conway's game of life </div>
-<div> new and updated tic tac toe </div>
+<div> new and updated tic tac toe (win condition not working)</div>
+<div> rudimentary movement system </div>
+<div> snake game (unfinished)</div>
 
 <img height = "10%" width = "10%" src= "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"> 
