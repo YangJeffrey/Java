@@ -10,10 +10,10 @@
 <div> tic-tac-toe game </div>
 <div> loops extravaganza </div>
 <div> caesar cipher encryption </div>
-<div> penny pitching game (for tanishq) </div>
-<div> prime number checker (for jai) </div>
-<div> conway's game of life </div>
-<div> new and updated tic tac toe (win condition not working)</div>
+<div> penny pitching game (for github.com/tanishq-ahuja) </div>
+<div> prime number checker (for github.com/jtdoshi) </div>
+<div> john conway's game of life </div>
+<div> tic-tac-toe game v2 (unfinished)</div>
 <div> rudimentary movement system </div>
 <div> snake game (unfinished)</div>
 
