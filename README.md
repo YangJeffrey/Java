@@ -12,7 +12,7 @@
 <div> caesar cipher encryption </div>
 <div> penny pitching game for <a href="https://github.com/tanishq-ahuja">Tanishq</a> </div>
 <div> prime number checker for <a href="https://github.com/jtdoshi">Jai</a> </div>
-<div> john conway's game of life </div>
+<div> John Conway's game of life </div>
 <div> tic-tac-toe game v2 (unfinished)</div>
 <div> rudimentary movement system </div>
 <div> snake game (unfinished)</div>
