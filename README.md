@@ -1,4 +1,4 @@
-<h1> Principles of Java G/T in Computer Science Principles AP and '19 Summer </h1>
+<h1> Jeffrey Yang Java Projects '19 </h1>
 <div> 5 function 2 number calculator </div>
 <div> summation calculator </div>
 <div> Fahrenheit to Celsius converter </div>
