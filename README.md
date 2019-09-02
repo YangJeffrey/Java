@@ -13,7 +13,7 @@
 <div> penny pitching game for <a href="https://github.com/tanishq-ahuja">Tanishq</a> </div>
 <div> prime number checker for <a href="https://github.com/jtdoshi">Jai</a> </div>
 <div> John Conway's game of life </div>
-<div> tic-tac-toe game v2 (unfinished)</div>
+<div> new tic-tac-toe game 2</div>
 <div> rudimentary movement system </div>
 <div> snake game (unfinished)</div>
 
