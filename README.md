@@ -1,4 +1,4 @@
-<h1> Java Projects by Jeffrey Yang </h1>
+<h1> Principles of Java G/T in Computer Science Principles AP and '19 Summer </h1>
 <div> 5 function 2 number calculator </div>
 <div> summation calculator </div>
 <div> Fahrenheit to Celsius converter </div>
@@ -13,8 +13,8 @@
 <div> penny pitching game for <a href="https://github.com/tanishq-ahuja">Tanishq</a> </div>
 <div> prime number checker for <a href="https://github.com/jtdoshi">Jai</a> </div>
 <div> John Conway's game of life </div>
-<div> new tic-tac-toe game 2</div>
+<div> new tic-tac-toe game 2 </div>
 <div> rudimentary movement system </div>
-<div> snake game (unfinished)</div>
+<div> snake game (unfinished) </div>
 <br>
 <img height = "10%" width = "10%" src= "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"> 
