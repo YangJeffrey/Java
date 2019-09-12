@@ -10,8 +10,8 @@
 <div> tic-tac-toe game </div>
 <div> loops extravaganza </div>
 <div> caesar cipher encryption </div>
-<div> penny pitching game for <a href="https://github.com/tanishq-ahuja">Tanishq</a> </div>
-<div> prime number checker for <a href="https://github.com/jtdoshi">Jai</a> </div>
+<div> penny pitching game </div>
+<div> prime number checker </div>
 <div> John Conway's game of life </div>
 <div> new tic-tac-toe game 2 </div>
 <div> rudimentary movement system </div>
